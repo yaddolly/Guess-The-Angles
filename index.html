@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut Icon" href="images.jpg"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Guess_The_Angle_Master_Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">Calculate the Angle</div>
+        <div class="game-box">
+            <div class="left">
+                <div class="angle">
+                    <div>Target Angle : <span class="target-angle"> </span></div>
+                    <div>Achieved Angle : <span class="achieved-angle"> </span> </div>
+                </div>
+                <div class="instruction">
+                    <ul>
+                        <li>Click on the circle to start.</li>
+                        <li>Click again to stop.</li>
+                    </ul>
+                </div>
+                <div class="data">
+                    <div>Round : <span class="round">0</span></div>
+                    <div>Score : <span class="score">0</span></div>
+                    <div>Average : <span class="average">0</span></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="circle">
+                    <div id="fixed"></div>
+                    <div id="move"></div>
+                </div>
+            </div>
+        </div>
+        <div class="end_game">
+            <div class="error_table">
+                <table>
+                    <tr>
+                        <th>Error</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>0-5 <span>&#xB0</span></td>
+                        <td>20</td>
+
+                    </tr>
+                    <tr>
+                        <td>6-10 <span>&#xB0</span></td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11-15 <span>&#xB0</span></td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="set_level">
+                <div>Level : <span class="level_number">1</span></div>
+                <input class="level" value=1 type="range" min="1" max="4" step="1">
+            </div>
+        </div>
+        <div class="last">
+            <div> <button class="restart">Restart</button></div>
+            <div class="end_game_text"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./game_background.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.title {
+    font-family: 'Rancho', cursive;
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.game-box {
+    height: 60%;
+    width: 80%;
+    box-shadow: 0px 0px 20px 20px #dfeb86;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Rancho', cursive;
+    color: rgb(29, 0, 0);
+}
+
+.target-angle {
+    width: 10px;
+}
+
+.achieved-angle {
+    width: 20px;
+}
+
+.instruction {
+    font-size: 20px;
+}
+
+.angle {
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.instruction {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.data {
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    background-color: #b6c824;
+    border-radius: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+
+#fixed {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    transform-origin: bottom;
+    margin: 10px;
+    width: 1%;
+    height: 140px;
+    opacity: 0.8;
+}
+
+#move {
+    position: absolute;
+    background: blue;
+    border-radius: 10px;
+    transform-origin: bottom;
+    margin: 10px;
+    width: 1%;
+    height: 140px;
+    opacity: 0.8;
+}
+
+.error_table {
+    font-size: 20px;
+}
+
+.end_game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+}
+
+.end_game_text {
+    font-family: 'Rancho', cursive;
+    font-size: 80px;
+    text-align: center;
+    flex-basis: 800px;
+}
+
+.restart {
+    font-family: 'Rancho', cursive;
+    font-size: 35px;
+    margin: 10px;
+    text-align: center;
+    padding: 6px;
+    background-color: #b6c824;
+    color: rgb(95, 9, 9);
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 10px #b6c824;
+}
+
+.set_level {
+    width: 200px;
+    margin-left: 60px;
+    font-size: 25px;
+    font-family: 'Rancho', cursive;
+}
+
+table {
+    margin-top: 20px;
+    width: 150px;
+}
+
+td {
+    padding-left: 30px;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1138px) {
+    * {
+        font-size: 20px;
+    }
+
+    .angle,
+    .data {
+        width: 230px;
+        margin: 5px;
+    }
+
+    .right {
+        width: 300px;
+    }
+
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+
+    #fixed,
+    #move {
+        height: 95px;
+        margin: 5px;
+    }
+
+    .game-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .end_game_text {
+        font-size: 40px;
+    }
+
+    .restart {
+        font-size: 20px;
+        margin-top: 10px
+    }
+
+    li {
+        font-size: 13px;
+    }
+}
